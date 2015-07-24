@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+
+	"name": "There to Their",
+	"version": "1.0",
+	"description": "This extension switches There to Their to the Grammar Nazi's despair.",
+	
+	"icons": { "16": "there2their16.png",
+           "48": "there2their48.png",
+          "128": "there2their128.png"},
+	
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["Myscript.js"],
+			"run_at": "document_end"
+		}
+	]
+}
